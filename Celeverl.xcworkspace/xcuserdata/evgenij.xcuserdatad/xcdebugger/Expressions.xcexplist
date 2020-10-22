@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MainViewer.handleKeyboardNotification(notification:):MainViewer.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.view.frame.origin.y">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MainViewer.configuareLogInPanel():MainViewer.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "panel.agreementTitleView.gestureRecognizers">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NotificationModel.__allocating_init(dictionary:):NotificationModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dictionary[&quot;usersDateStr&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NotificationViewCell.updateView():NotificationViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "model.usersDateStr">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in HCNetworkService.loadSettingsForUser(_:completion:):HCNetworkService+Settings.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "HCCameraMode">
+            </PersistentString>
+            <PersistentString
+               value = "let id = camera[&quot;Type&quot;] as? Int">
+            </PersistentString>
+            <PersistentString
+               value = "HCCameraMode.allCases.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,11 @@
+//
+//  Use this file to import your target's public headers that you would like to expose to Swift.
+//
+
+#import "MobileVLCKit/MobileVLCKit.h"
+
+
+
+#import "DotActivityIndicatorParms.h"//For Loader
+#import "DotActivityIndicatorView.h"
+

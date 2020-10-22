@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>455791640091-5okg94nl2qkgc1q0gnn3pio2a27tderu.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.455791640091-5okg94nl2qkgc1q0gnn3pio2a27tderu</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCkwCfEApkR3mD6hr8cZMRiVa3X04T7s3w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>455791640091</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.happychild.mobile</string>
+	<key>PROJECT_ID</key>
+	<string>cleverl</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cleverl.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:455791640091:ios:1950d289f5305b5dac42be</string>
+	<key>DATABASE_URL</key>
+	<string>https://cleverl.firebaseio.com</string>
+</dict>
+</plist>

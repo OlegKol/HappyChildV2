@@ -1,0 +1,6 @@
+framework module IPEYEDahua {
+  umbrella header "IPEYEDahua.h"
+
+  export *
+  module * { export * }
+}
