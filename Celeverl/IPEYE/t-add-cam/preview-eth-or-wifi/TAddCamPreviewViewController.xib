@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TAddCamPreviewViewController">
+            <connections>
+                <outlet property="camImageView" destination="63p-Qf-M3x" id="ksz-Ub-x0L"/>
+                <outlet property="ethernetConnectButton" destination="JD6-Uc-vK0" id="2LI-oE-YkO"/>
+                <outlet property="modelInfoLabel" destination="Qff-LL-U1K" id="5Ib-4f-Gcr"/>
+                <outlet property="modelValueLabel" destination="cL9-KZ-gMB" id="ejk-i4-pJA"/>
+                <outlet property="serialInfoLabel" destination="v3a-Ih-fK4" id="rB1-uI-6Qj"/>
+                <outlet property="serialValueLabel" destination="e5C-u4-OGe" id="FzT-2w-geI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wifiConnectButton" destination="JXS-r3-T59" id="uYD-jU-LPI"/>
+                <outlet property="wifiToEthConstraint" destination="dmi-2q-oxV" id="mI7-Dz-S0M"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXS-r3-T59">
+                    <rect key="frame" x="19" y="755.5" width="376" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="mIv-3c-FXG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="WiFi" backgroundImage="blue-button.png"/>
+                    <connections>
+                        <action selector="wifiButtonTap:" destination="-1" eventType="touchUpInside" id="TIg-Xy-9kt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JD6-Uc-vK0">
+                    <rect key="frame" x="19" y="757" width="376" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="29o-Rq-Ot0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Ethernet" backgroundImage="blue-button.png"/>
+                    <connections>
+                        <action selector="ethButtonTap:" destination="-1" eventType="touchUpInside" id="d0a-8g-x8i"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" image="add-cam-default.png" translatesAutoresizingMaskIntoConstraints="NO" id="63p-Qf-M3x">
+                    <rect key="frame" x="20" y="64" width="374" height="507.5"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="W3t-w2-1FC" appends="YES" id="zRT-KU-UhR"/>
+                    </connections>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qff-LL-U1K">
+                    <rect key="frame" x="20" y="591.5" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.49803921569999998" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL9-KZ-gMB">
+                    <rect key="frame" x="20" y="618" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serial" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3a-Ih-fK4">
+                    <rect key="frame" x="20" y="668.5" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.49803921569999998" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SNBO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5C-u4-OGe">
+                    <rect key="frame" x="20" y="695" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.98431372549999996" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="v3a-Ih-fK4" firstAttribute="trailing" secondItem="e5C-u4-OGe" secondAttribute="trailing" id="3Ra-Ds-i1O"/>
+                <constraint firstItem="JD6-Uc-vK0" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="19" id="4Ft-1e-I5e"/>
+                <constraint firstItem="63p-Qf-M3x" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="5NQ-St-YGd"/>
+                <constraint firstItem="Qff-LL-U1K" firstAttribute="leading" secondItem="cL9-KZ-gMB" secondAttribute="leading" id="6hR-zS-SiA"/>
+                <constraint firstItem="Qff-LL-U1K" firstAttribute="top" secondItem="63p-Qf-M3x" secondAttribute="bottom" constant="20" id="7UC-ay-LNi"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="JXS-r3-T59" secondAttribute="trailing" constant="19" id="AH0-eL-TF9"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="JD6-Uc-vK0" secondAttribute="trailing" constant="19" id="AYU-Wc-QxL"/>
+                <constraint firstItem="v3a-Ih-fK4" firstAttribute="leading" secondItem="e5C-u4-OGe" secondAttribute="leading" id="DPu-hD-f9g"/>
+                <constraint firstItem="JXS-r3-T59" firstAttribute="top" secondItem="e5C-u4-OGe" secondAttribute="bottom" constant="40" id="LPq-2s-Ric"/>
+                <constraint firstItem="63p-Qf-M3x" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="MXe-wU-Vwd"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="cL9-KZ-gMB" secondAttribute="trailing" constant="20" id="P8I-NU-PMh"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="e5C-u4-OGe" secondAttribute="trailing" constant="20" id="Pe5-pa-vdA"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="JD6-Uc-vK0" secondAttribute="bottom" constant="61" id="RFi-cf-ddE"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="JXS-r3-T59" secondAttribute="bottom" priority="750" constant="61" id="UUt-DV-6tK"/>
+                <constraint firstItem="JXS-r3-T59" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="19" id="XGV-O9-QyA"/>
+                <constraint firstItem="JD6-Uc-vK0" firstAttribute="top" secondItem="JXS-r3-T59" secondAttribute="bottom" priority="750" constant="19" id="dmi-2q-oxV"/>
+                <constraint firstItem="cL9-KZ-gMB" firstAttribute="top" secondItem="Qff-LL-U1K" secondAttribute="bottom" constant="6" id="gF0-jU-Tlq"/>
+                <constraint firstItem="Qff-LL-U1K" firstAttribute="trailing" secondItem="cL9-KZ-gMB" secondAttribute="trailing" id="ikT-Hx-uLB"/>
+                <constraint firstItem="e5C-u4-OGe" firstAttribute="top" secondItem="v3a-Ih-fK4" secondAttribute="bottom" constant="6" id="m5f-Xa-3rz"/>
+                <constraint firstItem="e5C-u4-OGe" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="mRH-a7-gL4"/>
+                <constraint firstItem="cL9-KZ-gMB" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="oXm-IM-Xpt"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="63p-Qf-M3x" secondAttribute="trailing" constant="20" id="ov0-7P-4nE"/>
+                <constraint firstItem="v3a-Ih-fK4" firstAttribute="top" secondItem="cL9-KZ-gMB" secondAttribute="bottom" constant="30" id="yVa-01-rqp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="102"/>
+        </view>
+        <tapGestureRecognizer numberOfTapsRequired="7" id="W3t-w2-1FC">
+            <connections>
+                <action selector="imageSingleTap:" destination="-1" id="G6l-K4-DgD"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="add-cam-default.png" width="307" height="507.33334350585938"/>
+        <image name="blue-button.png" width="337" height="44"/>
+    </resources>
+</document>

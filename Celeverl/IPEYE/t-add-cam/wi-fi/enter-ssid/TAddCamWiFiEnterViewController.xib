@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TAddCamWiFiEnterViewController">
+            <connections>
+                <outlet property="imageToTopConstraint" destination="u38-98-YKb" id="sxw-pJ-VEr"/>
+                <outlet property="imageToUserLabelConstraint" destination="9R3-6J-Ugk" id="T3Q-cb-6cY"/>
+                <outlet property="nextButton" destination="12u-Gh-Jz8" id="InP-mD-8gJ"/>
+                <outlet property="passwordContainer" destination="EgC-mC-28x" id="ZA4-US-4V1"/>
+                <outlet property="savePasswordButton" destination="oPR-KD-yZs" id="5GE-0m-7Dt"/>
+                <outlet property="savePasswordLabel" destination="cCT-4j-U6L" id="PGv-H2-QKd"/>
+                <outlet property="speedTestButton" destination="xgH-W6-seX" id="hKm-eh-RJZ"/>
+                <outlet property="speedTestToBottomConstraint" destination="izG-HW-Scb" id="0zk-cJ-1hk"/>
+                <outlet property="ssidContainer" destination="v11-lj-6CE" id="qKH-xf-YH7"/>
+                <outlet property="ssidLabel" destination="Utl-fW-TuQ" id="gDF-ta-riQ"/>
+                <outlet property="unsupportedButton" destination="Wtn-Q7-axc" id="O4u-73-Dtx"/>
+                <outlet property="unsupportedLabel" destination="meQ-g1-dMc" id="Ozn-Rn-flc"/>
+                <outlet property="userInfoLabel" destination="HCW-qx-aJf" id="FAi-Zi-qRr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wifiImageView" destination="kai-gd-lUh" id="8iw-dv-ls8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" image="add-cam-wifi.png" translatesAutoresizingMaskIntoConstraints="NO" id="kai-gd-lUh">
+                    <rect key="frame" x="106.66666666666667" y="149.66666666666666" width="200.66666666666663" height="151.99999999999997"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="250" constant="152" id="Fzj-Nr-UN5"/>
+                        <constraint firstAttribute="width" secondItem="kai-gd-lUh" secondAttribute="height" multiplier="152:115" id="bOh-OU-nNH"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="152" id="qZ9-Ek-VKR"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="753" text="Enter Wi-Fi SSID and password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="HCW-qx-aJf">
+                    <rect key="frame" x="20" y="340.66666666666669" width="374" height="20.333333333333314"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="999" constant="20" id="zbr-oY-dzb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v11-lj-6CE" customClass="TTextFieldContainer">
+                    <rect key="frame" x="0.0" y="394" width="414" height="54"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eV3-sa-BSX">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.89019607840000003" green="0.90588235289999997" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="dF9-97-eTV"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qjr-4J-AIC" customClass="TCirilycKeybordTextField">
+                            <rect key="frame" x="135.66666666666666" y="0.0" width="278.33333333333337" height="54"/>
+                            <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" textContentType="username"/>
+                            <connections>
+                                <action selector="ssidDidChange:" destination="-1" eventType="editingChanged" id="cqd-kr-734"/>
+                                <outlet property="delegate" destination="-1" id="1Hv-qH-osx"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sda-nG-1Kw">
+                            <rect key="frame" x="0.0" y="53" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.89019607840000003" green="0.90588235289999997" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="iwn-HT-vjb"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wi-Fi network:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Utl-fW-TuQ">
+                            <rect key="frame" x="20.000000000000007" y="16.666666666666686" width="111.66666666666669" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.49803921569999998" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Sda-nG-1Kw" secondAttribute="trailing" id="6Vv-K4-00v"/>
+                        <constraint firstAttribute="trailing" secondItem="qjr-4J-AIC" secondAttribute="trailing" id="CmN-tN-zo5"/>
+                        <constraint firstItem="qjr-4J-AIC" firstAttribute="top" secondItem="v11-lj-6CE" secondAttribute="top" id="NIX-St-hrQ"/>
+                        <constraint firstItem="eV3-sa-BSX" firstAttribute="leading" secondItem="v11-lj-6CE" secondAttribute="leading" id="Q23-WP-vWj"/>
+                        <constraint firstItem="Utl-fW-TuQ" firstAttribute="centerY" secondItem="v11-lj-6CE" secondAttribute="centerY" id="R5W-GV-Oow"/>
+                        <constraint firstAttribute="bottom" secondItem="qjr-4J-AIC" secondAttribute="bottom" id="VHU-Ar-Oqs"/>
+                        <constraint firstItem="Utl-fW-TuQ" firstAttribute="leading" secondItem="v11-lj-6CE" secondAttribute="leading" constant="20" id="VoF-SN-6lO"/>
+                        <constraint firstItem="eV3-sa-BSX" firstAttribute="top" secondItem="v11-lj-6CE" secondAttribute="top" id="a5V-g3-Dhn"/>
+                        <constraint firstItem="qjr-4J-AIC" firstAttribute="leading" secondItem="Utl-fW-TuQ" secondAttribute="trailing" constant="4" id="cXT-cP-lcC"/>
+                        <constraint firstAttribute="trailing" secondItem="eV3-sa-BSX" secondAttribute="trailing" id="kNP-Yb-YgF"/>
+                        <constraint firstItem="Sda-nG-1Kw" firstAttribute="leading" secondItem="v11-lj-6CE" secondAttribute="leading" id="nCb-vF-rY8"/>
+                        <constraint firstAttribute="height" constant="54" id="ncZ-Ss-xqH"/>
+                        <constraint firstAttribute="bottom" secondItem="Sda-nG-1Kw" secondAttribute="bottom" id="qTa-oi-e3W"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="bottomSeparator" destination="Sda-nG-1Kw" id="78e-Vn-0vb"/>
+                        <outlet property="textField" destination="qjr-4J-AIC" id="voO-My-Nsp"/>
+                        <outlet property="topSeparator" destination="eV3-sa-BSX" id="8zN-gG-X1w"/>
+                        <outletCollection property="gestureRecognizers" destination="HtF-yz-Zaw" appends="YES" id="NKB-5V-kfU"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgC-mC-28x" customClass="TTextFieldContainer">
+                    <rect key="frame" x="0.0" y="448" width="414" height="54"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter wifi password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DAI-am-7JH" customClass="TCirilycKeybordTextField">
+                            <rect key="frame" x="20" y="0.0" width="374" height="54"/>
+                            <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
+                            <connections>
+                                <action selector="passwordDidChange:" destination="-1" eventType="editingChanged" id="Bcj-wX-T9l"/>
+                                <outlet property="delegate" destination="-1" id="Ojo-w7-FvV"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVo-Tu-DYk">
+                            <rect key="frame" x="0.0" y="53" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.89019607840000003" green="0.90588235289999997" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="GX1-8G-bE7"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="UaK-eT-xjD"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="DAI-am-7JH" secondAttribute="trailing" constant="20" id="778-0x-A6S"/>
+                        <constraint firstAttribute="bottom" secondItem="DAI-am-7JH" secondAttribute="bottom" id="AxX-un-hVv"/>
+                        <constraint firstItem="DAI-am-7JH" firstAttribute="leading" secondItem="EgC-mC-28x" secondAttribute="leading" constant="20" id="BYr-XP-Hqa"/>
+                        <constraint firstAttribute="height" constant="54" id="Eah-Gl-Fl6"/>
+                        <constraint firstItem="NVo-Tu-DYk" firstAttribute="leading" secondItem="EgC-mC-28x" secondAttribute="leading" id="Hvi-he-NXz"/>
+                        <constraint firstItem="DAI-am-7JH" firstAttribute="top" secondItem="EgC-mC-28x" secondAttribute="top" id="QGj-fj-JPZ"/>
+                        <constraint firstAttribute="trailing" secondItem="NVo-Tu-DYk" secondAttribute="trailing" id="qpk-nv-DaO"/>
+                        <constraint firstAttribute="bottom" secondItem="NVo-Tu-DYk" secondAttribute="bottom" id="woY-Bo-JSC"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="bottomSeparator" destination="NVo-Tu-DYk" id="NQx-Ea-yVC"/>
+                        <outlet property="textField" destination="DAI-am-7JH" id="fho-Eg-1CZ"/>
+                    </connections>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12u-Gh-Jz8">
+                    <rect key="frame" x="19" y="757" width="376" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="8g7-U9-Ank"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Next" backgroundImage="blue-button.png"/>
+                    <connections>
+                        <action selector="nextTap:" destination="-1" eventType="touchUpInside" id="ABd-Ij-c4Y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgH-W6-seX">
+                    <rect key="frame" x="19" y="811" width="376" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="aQR-q1-6mA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Speed test" backgroundImage="gray-button.png">
+                        <color key="titleColor" red="0.43529411759999997" green="0.49803921569999998" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="testSpeedTap:" destination="-1" eventType="touchUpInside" id="8bU-Es-aUa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPR-KD-yZs">
+                    <rect key="frame" x="19" y="527" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="DAj-ew-hnw"/>
+                        <constraint firstAttribute="width" constant="24" id="veu-rc-uMY"/>
+                    </constraints>
+                    <state key="normal" image="gray-check-off.png"/>
+                    <state key="selected" image="gray-check-on.png"/>
+                    <connections>
+                        <action selector="savePasswordTap:" destination="-1" eventType="touchUpInside" id="Jts-4e-oqB"/>
+                    </connections>
+                </button>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCT-4j-U6L">
+                    <rect key="frame" x="50" y="525.66666666666663" width="97" height="27"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.49803921569999998" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="foV-ZJ-CEP" appends="YES" id="B6B-Xd-QOK"/>
+                    </connections>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtn-Q7-axc">
+                    <rect key="frame" x="361" y="517" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="5SU-PU-s5J"/>
+                        <constraint firstAttribute="height" constant="44" id="h65-qi-CZq"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="11" minY="11" maxX="11" maxY="11"/>
+                    <state key="normal" image="info-gray.png"/>
+                    <connections>
+                        <action selector="unsuppordedWiFiTap:" destination="-1" eventType="touchUpInside" id="iAn-DO-IfF"/>
+                    </connections>
+                </button>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device not support 5G Wi-Fi networks" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="meQ-g1-dMc">
+                    <rect key="frame" x="213.33333333333337" y="524.66666666666663" width="151.66666666666663" height="28.666666666666629"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.49803921569999998" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="a8R-qb-gwZ" appends="YES" id="U3J-Fa-XQz"/>
+                    </connections>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.98431372549999996" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="Wtn-Q7-axc" firstAttribute="centerY" secondItem="oPR-KD-yZs" secondAttribute="centerY" id="1ff-3N-Z0E"/>
+                <constraint firstItem="v11-lj-6CE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" priority="251" constant="-27" id="63d-yq-sIh"/>
+                <constraint firstItem="HCW-qx-aJf" firstAttribute="top" secondItem="kai-gd-lUh" secondAttribute="bottom" priority="997" constant="39" id="9R3-6J-Ugk"/>
+                <constraint firstItem="EgC-mC-28x" firstAttribute="top" secondItem="v11-lj-6CE" secondAttribute="bottom" id="Bgl-8N-D6t"/>
+                <constraint firstItem="v11-lj-6CE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Q5M-cg-NOt" secondAttribute="top" id="DgJ-Gx-X5c"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="HCW-qx-aJf" secondAttribute="trailing" constant="20" id="F1f-5h-atA"/>
+                <constraint firstItem="12u-Gh-Jz8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oPR-KD-yZs" secondAttribute="bottom" constant="20" id="FDo-11-V3C"/>
+                <constraint firstItem="v11-lj-6CE" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="KLH-cY-6BM"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="12u-Gh-Jz8" secondAttribute="trailing" constant="19" id="LOo-Oc-t5r"/>
+                <constraint firstItem="cCT-4j-U6L" firstAttribute="height" secondItem="oPR-KD-yZs" secondAttribute="height" multiplier="0.708333" constant="10" id="Lut-zL-tKm"/>
+                <constraint firstItem="EgC-mC-28x" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="MTU-7c-bdN"/>
+                <constraint firstItem="xgH-W6-seX" firstAttribute="top" secondItem="12u-Gh-Jz8" secondAttribute="bottom" constant="10" id="Mdw-2H-XwT"/>
+                <constraint firstItem="xgH-W6-seX" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="19" id="NLc-qI-ivw"/>
+                <constraint firstItem="EgC-mC-28x" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="PXd-3h-0bS"/>
+                <constraint firstItem="v11-lj-6CE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Pap-Bm-nJh"/>
+                <constraint firstItem="meQ-g1-dMc" firstAttribute="centerY" secondItem="Wtn-Q7-axc" secondAttribute="centerY" priority="250" id="Sis-ce-hf3"/>
+                <constraint firstItem="meQ-g1-dMc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cCT-4j-U6L" secondAttribute="trailing" constant="53" id="Ty4-Cl-b98"/>
+                <constraint firstItem="kai-gd-lUh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WwX-np-rhG"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="12u-Gh-Jz8" secondAttribute="bottom" constant="20" id="ZX6-Ze-Yf4"/>
+                <constraint firstItem="meQ-g1-dMc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EgC-mC-28x" secondAttribute="bottom" constant="4" id="ckX-1C-LHm"/>
+                <constraint firstItem="EgC-mC-28x" firstAttribute="top" secondItem="v11-lj-6CE" secondAttribute="bottom" id="d1D-ic-4aJ"/>
+                <constraint firstItem="cCT-4j-U6L" firstAttribute="leading" secondItem="oPR-KD-yZs" secondAttribute="trailing" constant="7" id="fEH-A3-DSr"/>
+                <constraint firstItem="12u-Gh-Jz8" firstAttribute="top" relation="greaterThanOrEqual" secondItem="meQ-g1-dMc" secondAttribute="bottom" constant="8" id="gBc-y5-iK7"/>
+                <constraint firstItem="HCW-qx-aJf" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="gZF-TO-GWG"/>
+                <constraint firstItem="v11-lj-6CE" firstAttribute="top" secondItem="HCW-qx-aJf" secondAttribute="bottom" priority="999" constant="33" id="hda-B4-BXm"/>
+                <constraint firstItem="12u-Gh-Jz8" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="19" id="iKZ-ep-tBi"/>
+                <constraint firstAttribute="bottom" secondItem="xgH-W6-seX" secondAttribute="bottom" priority="999" constant="41" id="izG-HW-Scb"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="xgH-W6-seX" secondAttribute="trailing" constant="19" id="jco-mc-SOx"/>
+                <constraint firstItem="v11-lj-6CE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="HCW-qx-aJf" secondAttribute="bottom" constant="8" id="joD-Ca-R1T"/>
+                <constraint firstItem="oPR-KD-yZs" firstAttribute="top" secondItem="EgC-mC-28x" secondAttribute="bottom" constant="25" id="kGV-4g-DGq"/>
+                <constraint firstItem="Wtn-Q7-axc" firstAttribute="leading" secondItem="meQ-g1-dMc" secondAttribute="trailing" constant="-4" id="ldj-wD-n2e"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="12u-Gh-Jz8" secondAttribute="bottom" priority="250" constant="61" id="qHw-R2-Kor"/>
+                <constraint firstItem="HCW-qx-aJf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="14" id="rfg-5u-Rk0"/>
+                <constraint firstItem="oPR-KD-yZs" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="19" id="sBS-gg-YIY"/>
+                <constraint firstItem="kai-gd-lUh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Q5M-cg-NOt" secondAttribute="top" priority="999" constant="39" id="u38-98-YKb"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Wtn-Q7-axc" secondAttribute="trailing" constant="9" id="yld-JL-C5Z"/>
+                <constraint firstItem="cCT-4j-U6L" firstAttribute="centerY" secondItem="oPR-KD-yZs" secondAttribute="centerY" id="yp0-Zw-WbX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="D81-ci-xgw" appends="YES" id="toS-tO-kYx"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
+        </view>
+        <tapGestureRecognizer id="foV-ZJ-CEP">
+            <connections>
+                <action selector="savePasswordTap:" destination="-1" id="TRQ-oq-5Ti"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="a8R-qb-gwZ">
+            <connections>
+                <action selector="unsuppordedWiFiTap:" destination="-1" id="el7-fa-rKd"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="D81-ci-xgw">
+            <connections>
+                <action selector="singleTap:" destination="-1" id="Et3-Wp-hSh"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="HtF-yz-Zaw">
+            <connections>
+                <action selector="ssidContainerTap:" destination="-1" id="t7c-HD-DVZ"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="add-cam-wifi.png" width="153" height="157"/>
+        <image name="blue-button.png" width="337" height="44"/>
+        <image name="gray-button.png" width="337" height="44"/>
+        <image name="gray-check-off.png" width="24" height="24"/>
+        <image name="gray-check-on.png" width="24" height="24"/>
+        <image name="info-gray.png" width="22" height="22"/>
+    </resources>
+</document>

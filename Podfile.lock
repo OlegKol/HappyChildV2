@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.9.1)
-  - DatePickerDialog (3.0)
+  - DatePickerDialog (4.0)
   - Firebase (5.20.2):
     - Firebase/Core (= 5.20.2)
   - Firebase/Core (5.20.2):
@@ -51,11 +51,11 @@ PODS:
     - GoogleUtilities/Network (~> 5.2)
     - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
-  - GoogleToolboxForMac/Defines (2.2.2)
-  - GoogleToolboxForMac/Logger (2.2.2):
-    - GoogleToolboxForMac/Defines (= 2.2.2)
-  - "GoogleToolboxForMac/NSData+zlib (2.2.2)":
-    - GoogleToolboxForMac/Defines (= 2.2.2)
+  - GoogleToolboxForMac/Defines (2.3.0)
+  - GoogleToolboxForMac/Logger (2.3.0):
+    - GoogleToolboxForMac/Defines (= 2.3.0)
+  - "GoogleToolboxForMac/NSData+zlib (2.3.0)":
+    - GoogleToolboxForMac/Defines (= 2.3.0)
   - GoogleUtilities/AppDelegateSwizzler (5.8.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -75,18 +75,18 @@ PODS:
   - GoogleUtilities/UserDefaults (5.8.0):
     - GoogleUtilities/Logger
   - iOSDropDown (0.3.4)
-  - IQKeyboardManagerSwift (6.5.5)
+  - IQKeyboardManagerSwift (6.5.6)
   - Kingfisher (4.10.0)
-  - MaterialComponents/ActivityIndicator (100.0.0):
+  - MaterialComponents/ActivityIndicator (118.1.0):
     - MaterialComponents/Palettes
     - MaterialComponents/private/Application
     - MDFInternationalization
     - MotionAnimator (~> 2.0)
-  - MaterialComponents/Palettes (100.0.0)
-  - MaterialComponents/private/Application (100.0.0)
+  - MaterialComponents/Palettes (118.1.0)
+  - MaterialComponents/private/Application (118.1.0)
   - MDFInternationalization (2.0.0)
-  - MJRefresh (3.3.1)
-  - MobileVLCKit (3.3.9)
+  - MJRefresh (3.5.0)
+  - MobileVLCKit (3.3.15)
   - MotionAnimator (2.8.1):
     - MotionInterchange (~> 1.6)
   - MotionInterchange (1.6.0)
@@ -95,14 +95,14 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
-  - ObjectMapper (3.5.1)
-  - Protobuf (3.11.4)
+  - ObjectMapper (3.5.3)
+  - Protobuf (3.13.0)
   - PVSwitch (1.0.1)
-  - Realm (4.3.0):
-    - Realm/Headers (= 4.3.0)
-  - Realm/Headers (4.3.0)
-  - RealmSwift (4.3.0):
-    - Realm (= 4.3.0)
+  - Realm (10.1.0):
+    - Realm/Headers (= 10.1.0)
+  - Realm/Headers (10.1.0)
+  - RealmSwift (10.1.0):
+    - Realm (= 10.1.0)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
@@ -156,7 +156,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  DatePickerDialog: 03dbb8350bfa80302ab2a8c83cee1fec70184444
+  DatePickerDialog: ccff2f91ff7a018057a4d72fa5ad6de49c8cb0cd
   Firebase: 0c8cf33f266410c61ab3e2265cfa412200351d9c
   FirebaseAnalytics: ece1aa57a4f43c64d53a648b5a5e05151aae947b
   FirebaseAnalyticsInterop: 3f86269c38ae41f47afeb43ebf32a001f58fcdae
@@ -165,25 +165,25 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: a122b0c258720cf250551bb2bedf48c699f80d90
   FirebaseMessaging: 4235f949ce1c4e827aeb19705ba5c53f9b85aa10
   GoogleAppMeasurement: ffe513e90551844a739e7bcbb1d2aca1c28a4338
-  GoogleToolboxForMac: 800648f8b3127618c1b59c7f97684427630c5ea3
+  GoogleToolboxForMac: 1350d40e86a76f7863928d63bcb0b89c84c521c5
   GoogleUtilities: 04fce34bcd5620c1ee76fb79172105c74a4df335
   iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
-  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
-  MaterialComponents: b4cc6c1649a566d70bd72096f3e1aae2c3701e4f
+  MaterialComponents: e4a7c8b5eabe7856ef58f632fb5800a229bda5be
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
-  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
-  MobileVLCKit: cf10c4a138d89f3843b6290f94823609b34215a1
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  MobileVLCKit: 9a04c9fa19e35c376ddf59425dd82e397d5899ad
   MotionAnimator: ee16aa30567c5bae0fb2750c132915829cfaaf8a
   MotionInterchange: ead0e3ae1f3a5fb539e289debbc7ae036160a10d
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
-  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
-  Protobuf: 176220c526ad8bd09ab1fb40a978eac3fef665f7
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  Protobuf: 3dac39b34a08151c6d949560efe3f86134a3f748
   PVSwitch: b92d92b2ee725f815824217fcc0fb4d60948f978
-  Realm: 9357c3589555793e1860a7104a7412bca4a48d99
-  RealmSwift: 402f1e379a8ef82c635313037b043f0f06de880c
+  Realm: 100df88a0faf5328f48477427e4b3e1a1598bae3
+  RealmSwift: 725d1c10df64964b04aaa0058c19ce0f4b4c3f5a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 9e71816eac3a8e0605d067ed7ee84f4c26219855
+PODFILE CHECKSUM: 41ed107421d5921d3719c3bc01a401b1909a49da
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0

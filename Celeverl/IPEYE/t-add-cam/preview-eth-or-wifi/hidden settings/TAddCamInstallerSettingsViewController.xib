@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TAddCamInstallerSettingsViewController">
+            <connections>
+                <outlet property="fwDowngradeSwitch" destination="YsP-Md-q8D" id="gvY-8F-XoG"/>
+                <outlet property="fwDownloadSwitch" destination="PcG-Tb-Dde" id="trL-kV-NXA"/>
+                <outlet property="fwInstallSwitch" destination="RMM-xC-UVc" id="nWK-hq-3HJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Принудительно обновлять прошивку камеры" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7B-Hd-49M">
+                    <rect key="frame" x="20" y="59" width="217" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="0.65240119490000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RMM-xC-UVc">
+                    <rect key="frame" x="345" y="59" width="51" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="iEC-ti-P5k"/>
+                    </constraints>
+                    <connections>
+                        <action selector="fwInstallTap:" destination="-1" eventType="valueChanged" id="0C8-z8-cgX"/>
+                    </connections>
+                </switch>
+                <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4i-vT-Mwu">
+                    <rect key="frame" x="20" y="115" width="374" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="7vw-1g-B0q"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Скачивать прошивку игнорируя кэш" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhV-79-9lj">
+                    <rect key="frame" x="20" y="131" width="292" height="31"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="0.65240119490000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PcG-Tb-Dde">
+                    <rect key="frame" x="345" y="131" width="51" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="78o-k8-sF9"/>
+                    </constraints>
+                    <connections>
+                        <action selector="fwDownloadTap:" destination="-1" eventType="valueChanged" id="fHN-Fw-9eL"/>
+                    </connections>
+                </switch>
+                <view alpha="0.15000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egD-28-poH">
+                    <rect key="frame" x="20" y="177" width="374" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="3xW-Bx-Mrl"/>
+                    </constraints>
+                </view>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YsP-Md-q8D">
+                    <rect key="frame" x="345" y="193" width="51" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="bVf-G3-Yuo"/>
+                    </constraints>
+                    <connections>
+                        <action selector="fwDowngradeTap:" destination="-1" eventType="valueChanged" id="XqC-hw-fCb"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Использовать старую версию прошивки" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44A-us-UHd">
+                    <rect key="frame" x="20" y="193" width="179" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="0.65240119490000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view alpha="0.15000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b07-z0-l0l">
+                    <rect key="frame" x="20" y="249" width="374" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="gZs-MM-VsG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.98431372549999996" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="m4i-vT-Mwu" firstAttribute="top" secondItem="M7B-Hd-49M" secondAttribute="bottom" constant="15" id="0zv-gB-LEX"/>
+                <constraint firstItem="egD-28-poH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YhV-79-9lj" secondAttribute="bottom" constant="15" id="5gV-z3-Yaa"/>
+                <constraint firstItem="RMM-xC-UVc" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="15" id="8BR-LQ-6fW"/>
+                <constraint firstItem="egD-28-poH" firstAttribute="top" secondItem="PcG-Tb-Dde" secondAttribute="bottom" priority="750" constant="15" id="8rR-pF-OYZ"/>
+                <constraint firstItem="M7B-Hd-49M" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="99x-zc-SDs"/>
+                <constraint firstAttribute="trailing" secondItem="b07-z0-l0l" secondAttribute="trailing" constant="20" id="DN4-Mj-uBP"/>
+                <constraint firstItem="egD-28-poH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Fii-Fc-uSC"/>
+                <constraint firstItem="b07-z0-l0l" firstAttribute="top" secondItem="YsP-Md-q8D" secondAttribute="bottom" priority="750" constant="15" id="GY0-oy-sWn"/>
+                <constraint firstItem="PcG-Tb-Dde" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YhV-79-9lj" secondAttribute="trailing" constant="8" id="I7F-yI-ug1"/>
+                <constraint firstItem="M7B-Hd-49M" firstAttribute="centerY" secondItem="RMM-xC-UVc" secondAttribute="centerY" priority="750" id="L1U-4A-pcj"/>
+                <constraint firstItem="PcG-Tb-Dde" firstAttribute="top" secondItem="m4i-vT-Mwu" secondAttribute="bottom" constant="15" id="MY0-2k-Au1"/>
+                <constraint firstItem="YhV-79-9lj" firstAttribute="centerY" secondItem="PcG-Tb-Dde" secondAttribute="centerY" id="N8S-GI-hAj"/>
+                <constraint firstItem="44A-us-UHd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Ohn-r1-NZ1"/>
+                <constraint firstItem="YhV-79-9lj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="Owa-x6-Ftw"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="PcG-Tb-Dde" secondAttribute="trailing" constant="20" id="QI2-T9-cWY"/>
+                <constraint firstItem="RMM-xC-UVc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="M7B-Hd-49M" secondAttribute="trailing" constant="8" id="QeP-ac-Bod"/>
+                <constraint firstItem="b07-z0-l0l" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YsP-Md-q8D" secondAttribute="bottom" constant="15" id="SJC-xu-ubl"/>
+                <constraint firstItem="M7B-Hd-49M" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="15" id="Y4L-1v-oax"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="YsP-Md-q8D" secondAttribute="trailing" constant="20" id="cRw-27-Pf7"/>
+                <constraint firstItem="b07-z0-l0l" firstAttribute="top" relation="greaterThanOrEqual" secondItem="44A-us-UHd" secondAttribute="bottom" constant="15" id="eX7-KL-lFB"/>
+                <constraint firstItem="b07-z0-l0l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="fdQ-o0-Ngd"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="RMM-xC-UVc" secondAttribute="trailing" constant="20" id="iHg-zi-8vR"/>
+                <constraint firstItem="egD-28-poH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PcG-Tb-Dde" secondAttribute="bottom" constant="15" id="jiV-lX-7Lz"/>
+                <constraint firstAttribute="trailing" secondItem="egD-28-poH" secondAttribute="trailing" constant="20" id="kLM-Tz-Ws3"/>
+                <constraint firstItem="YsP-Md-q8D" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="44A-us-UHd" secondAttribute="trailing" constant="8" id="kPA-bw-z9y"/>
+                <constraint firstItem="44A-us-UHd" firstAttribute="top" secondItem="egD-28-poH" secondAttribute="bottom" constant="15" id="kSf-ah-sLl"/>
+                <constraint firstItem="YhV-79-9lj" firstAttribute="top" secondItem="m4i-vT-Mwu" secondAttribute="bottom" constant="15" id="m91-Up-rWK"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="m4i-vT-Mwu" secondAttribute="trailing" constant="20" id="sSu-83-ELT"/>
+                <constraint firstItem="44A-us-UHd" firstAttribute="centerY" secondItem="YsP-Md-q8D" secondAttribute="centerY" id="tTM-DN-Ek3"/>
+                <constraint firstItem="YsP-Md-q8D" firstAttribute="top" secondItem="egD-28-poH" secondAttribute="bottom" constant="15" id="u8u-CA-nTX"/>
+                <constraint firstItem="m4i-vT-Mwu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="uke-FC-JiV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </view>
+    </objects>
+</document>

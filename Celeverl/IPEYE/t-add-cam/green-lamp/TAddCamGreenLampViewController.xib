@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TAddCamGreenLampViewController">
+            <connections>
+                <outlet property="greenLampConfirmButton" destination="afr-i4-wUc" id="GEj-uT-Yvf"/>
+                <outlet property="greenLampConfirmLabel" destination="51n-OM-mmH" id="PGI-4o-Gfs"/>
+                <outlet property="greenLampInfoLabel" destination="NYd-aL-nyA" id="Wsw-x4-l9Q"/>
+                <outlet property="infoLabel" destination="EmW-nk-s12" id="ZRX-wA-eOK"/>
+                <outlet property="nextButton" destination="PeR-NJ-cSH" id="0lR-Yh-b9K"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add cam user info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmW-nk-s12">
+                    <rect key="frame" x="20" y="438" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.49803921569999998" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" image="add-cam-check-lamp.png" translatesAutoresizingMaskIntoConstraints="NO" id="BKJ-Vd-ORm">
+                    <rect key="frame" x="134" y="222" width="146" height="146"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="BKJ-Vd-ORm" secondAttribute="height" multiplier="1:1" id="3TE-zY-eyT"/>
+                        <constraint firstAttribute="width" priority="750" constant="146" id="R51-mk-GUj"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green lamp not blink" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYd-aL-nyA">
+                    <rect key="frame" x="20" y="484.5" width="374" height="20.5"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.69411764705882351" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Qfz-64-Tu3" appends="YES" id="qEA-AA-tEW"/>
+                    </connections>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afr-i4-wUc">
+                    <rect key="frame" x="142.5" y="674" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="5ae-sz-WBR"/>
+                        <constraint firstAttribute="height" constant="48" id="D0b-f4-Y04"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
+                    <state key="normal" image="gray-check-off.png"/>
+                    <state key="selected" image="gray-check-on.png"/>
+                    <connections>
+                        <action selector="greenLampConfirmTap:" destination="-1" eventType="touchUpInside" id="Hzp-Xp-rkV"/>
+                    </connections>
+                </button>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51n-OM-mmH">
+                    <rect key="frame" x="185.5" y="674" width="61.5" height="48"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.49803921569999998" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="1fx-Xd-xwN" appends="YES" id="2mK-Yz-65R"/>
+                    </connections>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeR-NJ-cSH">
+                    <rect key="frame" x="19" y="757" width="376" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="azu-Pp-1wM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Next" backgroundImage="blue-button.png"/>
+                    <connections>
+                        <action selector="nextTap:" destination="-1" eventType="touchUpInside" id="hQy-qT-wcn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.98431372549999996" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NYd-aL-nyA" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="0Gb-cr-jQ2"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="PeR-NJ-cSH" secondAttribute="bottom" constant="61" id="3cO-DM-Kpt"/>
+                <constraint firstItem="afr-i4-wUc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="8" id="3tU-uF-kXn"/>
+                <constraint firstItem="BKJ-Vd-ORm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="70" id="4Ts-hR-UIV"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="NYd-aL-nyA" secondAttribute="trailing" constant="20" id="8Ll-ew-6PX"/>
+                <constraint firstItem="EmW-nk-s12" firstAttribute="top" secondItem="BKJ-Vd-ORm" secondAttribute="bottom" constant="70" id="CnU-36-2Oe"/>
+                <constraint firstItem="51n-OM-mmH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="NYd-aL-nyA" secondAttribute="bottom" constant="20" id="CwG-qj-Nak"/>
+                <constraint firstItem="EmW-nk-s12" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="HTn-Cp-z4P"/>
+                <constraint firstItem="NYd-aL-nyA" firstAttribute="top" secondItem="EmW-nk-s12" secondAttribute="bottom" constant="26" id="Hn0-as-sFU"/>
+                <constraint firstItem="51n-OM-mmH" firstAttribute="height" relation="greaterThanOrEqual" secondItem="afr-i4-wUc" secondAttribute="height" id="Mxs-5w-65S"/>
+                <constraint firstItem="51n-OM-mmH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" priority="750" constant="9" id="OSc-sY-pZ9"/>
+                <constraint firstItem="EmW-nk-s12" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" priority="999" id="U9M-6w-ChM"/>
+                <constraint firstItem="PeR-NJ-cSH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EmW-nk-s12" secondAttribute="bottom" constant="20" id="VXB-wO-RPN"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="EmW-nk-s12" secondAttribute="trailing" constant="20" id="bz4-rh-Krh"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="PeR-NJ-cSH" secondAttribute="trailing" constant="19" id="eCI-Q1-jWC"/>
+                <constraint firstItem="51n-OM-mmH" firstAttribute="centerY" secondItem="afr-i4-wUc" secondAttribute="centerY" id="f0q-bb-bz4"/>
+                <constraint firstItem="BKJ-Vd-ORm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="i3c-nv-gQX"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="51n-OM-mmH" secondAttribute="trailing" constant="20" id="l6a-A2-xF3"/>
+                <constraint firstItem="PeR-NJ-cSH" firstAttribute="top" secondItem="afr-i4-wUc" secondAttribute="bottom" constant="35" id="pBy-Q2-coO"/>
+                <constraint firstItem="PeR-NJ-cSH" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="19" id="s6q-Lu-dlp"/>
+                <constraint firstItem="51n-OM-mmH" firstAttribute="leading" secondItem="afr-i4-wUc" secondAttribute="trailing" constant="-5" id="uzJ-lB-VzW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="102"/>
+        </view>
+        <tapGestureRecognizer id="1fx-Xd-xwN">
+            <connections>
+                <action selector="greenLampConfirmTap:" destination="-1" id="NwQ-YG-XYh"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="Qfz-64-Tu3">
+            <connections>
+                <action selector="greenLampInfoTap:" destination="-1" id="8It-U8-ugY"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="add-cam-check-lamp.png" width="134.5" height="158.5"/>
+        <image name="blue-button.png" width="337" height="44"/>
+        <image name="gray-check-off.png" width="24" height="24"/>
+        <image name="gray-check-on.png" width="24" height="24"/>
+    </resources>
+</document>

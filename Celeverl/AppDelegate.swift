@@ -23,6 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var pushToken = ""
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        // -------
+        //#error("TODO: начало")
+        let first = TAddCamBeginViewController.initWithMainBundle()!
+        let nav = UINavigationController.init(rootViewController:first)
+        window?.rootViewController = nav
+        return true
+        // -------
+        
   //      self.notificationService.notificationCenter.delegate = self
         FirebaseApp.configure()
         registerAPNS(application)
